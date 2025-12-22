@@ -1,12 +1,10 @@
-JavaScript Topics Covered
+JavaScript Topics Covered.
+
 1.What is JavaScript (Browser JavaScript  & Server-side JavaScript (Node.js))
 
 2.Variables(var, let, const)
 
-3.Data Types
-  3.1.Primitive types
-  3.2.Non-primitive types (objects, arrays)
-  3.3.typeof
+3.Data Types (Primitive types,Non-primitive types, typeof)
 
 4.Basic Input / Output
 
@@ -20,18 +18,7 @@ JavaScript Topics Covered
 
 9.Loops (for, while, do...while, for...of, for...in, break & continue)
 
-10.Functions
-  10.1.Function declaration
-  10.2.Function expression
-  10.3.Arrow functions
-  10.4.Parameters & return values
-  10.5.Callback functions
-  10.6.Scope in functions
+10.Functions (Function declaration,Function expression,Arrow functions,Parameters & return values,Callback functions,Scope in functions)
 
-11.Arrays
-  11.1.Creating arrays
-  11.2.Accessing elements
-  11.3.Insertion and deletion of element 
-  11.4.Looping through arrays
-  11.5.Array Methods(map(), filter(), reduce(), find() )
+11.Arrays (Creating arrays, Accessing elements, Insertion and deletion of element ,Looping through arrays, Array Methods(map(), filter(), reduce(), find()))
 
