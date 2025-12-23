@@ -22,3 +22,9 @@ JavaScript Topics Covered.
 
 11.Arrays (Creating arrays, Accessing elements, Insertion and deletion of element ,Looping through arrays, Array Methods(map(), filter(), reduce(), find()))
 
+12.JavaScript Objects
+
+13.JavaScript Array of Objects
+
+14.Destructuring of Array and Objects
+
