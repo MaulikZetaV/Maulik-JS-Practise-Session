@@ -155,3 +155,51 @@ console.log(updation);
 
 //removal of product by id
 const removal = products.filter(products=>products.p_id!==4);
+
+const user={
+    name:"Maulik Thakur",
+    age:22,
+    company:"Zeta-V Technology",
+    role:"Trainee",
+    experience:"Rookie"
+};
+
+//Approach for desturcturing
+const {name,company} = user;
+console.log(name,"\n",company);
+
+//Desturcturing along with changing variable name
+const{name:fullname,company:EmployerIdentity} = user;
+console.log(fullname);
+
+//Default Values
+const{role:designation="Entry-level"}=user;
+
+//for accessing all details apart from written
+const{myname,...restDetails}=user;
+console.log(restDetails);
+
+//Objeict Destructuring Self Practise Session
+const produc = {
+  name:"Airdrop 141",
+  brand:"Boat",
+  origin:"China",
+  price:"1850",
+  production:{
+      India:500,
+      China:250
+  },
+  launched_year:2023
+};
+
+
+// Destructure name and price from product object and rename destructured variable
+const {name:productName,price:cost} = produc;
+console.log(productName);
+console.log(cost);
+
+// Destructure nested object
+const{
+    production:{India,China}
+} = produc;
+console.log(India);

@@ -100,23 +100,3 @@ console.log(finding);
 // 1. Calculate total marks of students
 const total_marks = students.reduce((sum,students)=> sum+students.marks,0);
 console.log(total_marks);
-
-//Destructuring (React Props Style)
-// Destructure a student object
-const student ={
-    name:"Maulik Thakur",
-    age:23,
-    course:"B.Tech",
-    domain:"IT"
-};
-
-const {name:fullName,domain:fieldStudy}=student;
-console.log(fullName);
-console.log(fieldStudy);
-
-// Destructure array elements
-const values = [1,3,5,7];
-
-const [one,,five]=values;
-console.log(one);
-console.log(five);
