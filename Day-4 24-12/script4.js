@@ -55,4 +55,20 @@ function max_and_sum(...numbers){
 console.log(max_and_sum(10,20,30,40,50,60));
 
 
+// Default Parameters
+// 1.Function with default country
+function info(name,country="India"){
+    return {name,country};
+}
+console.log(info("Maulik"));
+console.log(info("Messi","Argentina"));
+
+
+// 2.Function with default discount value
+function bill(price,discount=10){
+    return(`You have to pay ${price-(price*discount/100)}`);
+}
+console.log(bill(1000));
+console.log(bill(1000,20));
+
 
