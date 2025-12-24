@@ -149,3 +149,21 @@ const {streamlined,precise,...more}= obje1;
 console.log(streamlined);
 console.log(precise);
 console.log(more);
+
+//Default Parametrer
+//Basic understanding
+function user(name="Guest"){
+    console.log(`Hello ${name}`);  
+};
+
+user(); //This will take default parameter
+user("Maulik"); //This will use passed parameter
+
+//Default parameter with Expressions
+function calculateTotal(price,tax=price*0.15){
+    return price+tax;  
+};
+console.log(calculateTotal(1000));
+
+//Default parameter with Arrow Function
+const greet = (name = "Guest") => `Hello ${name}`;
