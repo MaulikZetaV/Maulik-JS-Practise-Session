@@ -28,3 +28,15 @@ JavaScript Topics Covered.
 
 14.Destructuring of Array and Objects
 
+15.ES6 Concepts
+
+16.Template literals
+
+17.Spread operator (...)
+
+18.Rest operator
+
+19.Destructuring (array & object)
+
+20.Default parameters
+
