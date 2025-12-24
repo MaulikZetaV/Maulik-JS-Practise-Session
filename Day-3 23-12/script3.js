@@ -1,205 +1,122 @@
-// Array creation
-const names = ["Maulik","Ram","Shyam","Govind"];
+//Arrays
+//1. Creating of array of 5 numbers
+let numbers = [1,2,3,4,5];
 
-// //Length of array 
-console.log(names.length); 
+//2.Printing element of array
+console.log(numbers[0]); // First element
+console.log(numbers[numbers.length-1]); //Last element
 
-// Iterating over every element of array
-for (const name of names){
-    console.log(name);
-}
-
-//Insertion of Element
-names.push("Thakur"); //Insertion at the end
-names.unshift("Mo"); //Insertion at the beginning
-
-// Removal of Element
-names.pop(); //Removes the last element
-names.shift(); //Removes from the beginning
-
-// This is built is JavaScript Method used for checking the Array is array.
-console.log(Array.isArray(names));
-
-//Copying array
-const titles = [...names];
-console.log(titles);
-
-// Array Methods
-//Map method : Transform every element of array
-const lower_Case = names.map(name=>name.toLowerCase());
-console.log(lower_Case);
-
-//Filter method: Filter element based on condition.
-const new_names = names.filter(name=>name.length>5);
-console.log(new_names);
-
-// Find method : Return first matching
-const findout = names.find(name=>name==="Maulik");
-console.log(findout);
-
-//Reduce Method:Used to reduce array into a single value.
-const prices = [100, 200, 300];
-
-const total = prices.reduce((sum, price) => sum + price, 0);
-
-
-//Array Self Practise Questions
-//Create an array of numbers and print all
-let numbers = [5,7,12,15,18];
+//3.Adding new element at the end
+numbers.push(8);
 console.log(numbers);
 
-//Using map() to double the values
-let map_method = numbers.map(number=>number*2);
-console.log(map_method);
+//4.Remove last element of array
+numbers.pop();
+console.log(numbers);
 
-//Filter numbers greater than 10
-let filter_method = numbers.filter(number=>number>10);
-console.log(filter_method);
 
-//find method
-let find_method = numbers.find(number=>number===18);
-console.log(find_method);
+// Array Methods (push, pop, shift, unshift)
+let arr=[];
 
-// Reduce method
-const addition = numbers.reduce((sum, numbers) => sum + numbers, 0);
-console.log(addition)
+// 1. Add 3 elements to array
+arr.push("Maulik");
+arr.push("MrMO");
+arr.push("ZetaV");
+
+// 2. Remove first element
+arr.shift();
+
+//3. Remove last element
+arr.pop();
+
+// 4. Print final array
+console.log(arr);
 
 
 // Objects
-// Object Creation
-const user={
-    name:"Maulik Thakur",
-    age:22,
-    company:"Zeta-V Technology",
-    role:"Trainee",
-    experience:"Rookie"
+// 1. Create object student
+let student = {
+  name: "Sarman Thakur",
+  rollNo: "467781",
+  marks: "450"
 };
 
-// Accessing object element
-console.log(user.company); //Dot method(Prefered)
-console.log(user["age"]); //Bracket method
-
-// Adding element
-user.city = "Pune";
-console.log(user);
-
-//Updating element
-user.experience = "Fresher";
-console.log(user);
-
-//deleting the key-value pair
-delete user.city;
-console.log(user);
-
-
-// Object Self Practise
-// Create an object for a product
-const product={
-    name:"Nuggets",
-    brand:"Cadbury",
-    shelf_life:6,
-    price:350
-};
-
-// Add and update properties
-product.price = 450;
-product.manufacturingCountry = "India";
-console.log(product);
-
-//Create nested object and access it
-const info ={
-    name:"Maulik Thakur",
-    role:"Trainee",
-    company:"Zeta-V Technology",
-    address:{
-        residence:"Pune",
-        permanent:"Seoni"
-    },
-    birth_year:2003
-};
-
-console.log(info.address.permanent);
-
-//Looping through objects key and values
-for(const keys in product){
-  console.log(keys,product[keys]);
+// 2. Print all values
+for(const key in student){
+    console.log(student[key]);
 }
 
+// 3. Update marks
+student.marks = "475";
 
-//Array of Object Self Practise
-// Create an array of 5 products
-const products=[
-    {p_id:1,name:"Redmi Note 10 Pro",brand:"Xiaomi",price:19500},
-    {p_id:2,name:"Realme 9 Pro+",brand:"Realme",price:22500},
-    {p_id:3,name:"Samsung Galaxy S24",brand:"Samsung",price:132000},
-    {p_id:4,name:"Iphone 17 Pro",brand:"Apple",price:142000},
-    {p_id:5,name:"Nothing 3A",brand:"Nothing",price:27550},
-    ];
-    
-//Print all product names
-for(let i=0;i<products.length;i++){
-    console.log(products[i].name);
+// 4. Add new property grade
+student.grade = "A+";
+console.log(student);
+
+
+// Array of Objects
+// 1. Create array of 5 students
+let students = [
+  { id: 1, name: "Ram", age: 24, marks: 98 },
+  { id: 2, name: "Shyam", age: 23, marks: 91 },
+  { id: 3, name: "Raghu", age: 24, marks: 93 },
+  { id: 4, name: "Sheetal", age: 23, marks: 45 },
+  { id: 5, name: "Priya", age: 22, marks: 38 }
+];
+
+// 2. Print all student names
+for(let i=0;i<students.length;i++){
+    console.log(students[i].name);
 }
 
-//Filter product above price 20000
-const filtering = products.filter(products=>products.price>20000);
-console.log(filtering);
+//map()
+// 1. Print student names
+const student_names=students.map(students=>students.name);
+console.log(student_names);
 
-//find a product by id
-const finding = products.find(products=>products.p_id===4);
+// 2. Add result: "Pass" to each student
+let result = students.map(students => {
+     return {
+            ...students,
+            result: "Pass"
+  };
+});
+
+//filter()
+// 1. Filter students who scored more than 60
+const filtered_students = students.filter(students=>students.marks>60);
+console.log(filtered_students);
+
+// 2. Filter users age >= 24
+const filteredByAge = students.filter(students=>students.age>23);
+console.log(filteredByAge);
+
+//find()
+// 1. Find student by roll number
+const finding = students.find(students=>students.id===4);
 console.log(finding);
 
-//updating a price of product
-const updation = products.map(products=>products.p_id===5?{...products,price:23550}:products);
-console.log(updation);
+//reduce()
+// 1. Calculate total marks of students
+const total_marks = students.reduce((sum,students)=> sum+students.marks,0);
+console.log(total_marks);
 
-//removal of product by id
-const removal = products.filter(products=>products.p_id!==4);
-
-const user={
+//Destructuring (React Props Style)
+// Destructure a student object
+const student ={
     name:"Maulik Thakur",
-    age:22,
-    company:"Zeta-V Technology",
-    role:"Trainee",
-    experience:"Rookie"
+    age:23,
+    course:"B.Tech",
+    domain:"IT"
 };
 
-//Approach for desturcturing
-const {name,company} = user;
-console.log(name,"\n",company);
+const {name:fullName,domain:fieldStudy}=student;
+console.log(fullName);
+console.log(fieldStudy);
 
-//Desturcturing along with changing variable name
-const{name:fullname,company:EmployerIdentity} = user;
-console.log(fullname);
+// Destructure array elements
+const values = [1,3,5,7];
 
-//Default Values
-const{role:designation="Entry-level"}=user;
-
-//for accessing all details apart from written
-const{myname,...restDetails}=user;
-console.log(restDetails);
-
-//Objeict Destructuring Self Practise Session
-const produc = {
-  name:"Airdrop 141",
-  brand:"Boat",
-  origin:"China",
-  price:"1850",
-  production:{
-      India:500,
-      China:250
-  },
-  launched_year:2023
-};
-
-
-// Destructure name and price from product object and rename destructured variable
-const {name:productName,price:cost} = produc;
-console.log(productName);
-console.log(cost);
-
-// Destructure nested object
-const{
-    production:{India,China}
-} = produc;
-console.log(India);
+const [one,,five]=values;
+console.log(one);
+console.log(five);
