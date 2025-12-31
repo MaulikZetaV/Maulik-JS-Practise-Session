@@ -1,42 +1,99 @@
-JavaScript Topics Covered.
+What is JavaScript (Browser JavaScript & Server-side JavaScript using Node.js)
 
-1.What is JavaScript (Browser JavaScript  & Server-side JavaScript (Node.js))
+Variables (var, let, const)
 
-2.Variables(var, let, const)
+Data Types (Primitive types, Non-primitive types, typeof operator)
 
-3.Data Types (Primitive types,Non-primitive types, typeof)
+Basic Input / Output in JavaScript
 
-4.Basic Input / Output
+Operators (Arithmetic, Assignment, Comparison, Logical, Unary, Ternary)
 
-5.Operators (Arithmetic,Assignment,Comparison,Logical,Unary,Ternary)
+Difference between == and ===
 
-6.== vs ===
+Comments and Clean Coding Practices
 
-7.Comments and Clean Coding Practise
+Conditional Statements (if, if...else, if...else if...else, switch, Ternary operator)
 
-8.Conditional Statements (if , if...else, if...else if...else, switch, Ternary operator)
+Loops (for, while, do...while, for...of, for...in, break & continue)
 
-9.Loops (for, while, do...while, for...of, for...in, break & continue)
+Functions (Function declaration, Function expression, Arrow functions, Parameters & return values, Callback functions, Scope in functions)
 
-10.Functions (Function declaration,Function expression,Arrow functions,Parameters & return values,Callback functions,Scope in functions)
+Arrays (Creating arrays, Accessing elements, Insertion and deletion of elements, Looping through arrays, Array methods such as map(), filter(), reduce(), find(), forEach(), some(), every())
 
-11.Arrays (Creating arrays, Accessing elements, Insertion and deletion of element ,Looping through arrays, Array Methods(map(), filter(), reduce(), find()))
+Array Immutability and Why We Avoid Mutating Arrays
 
-12.JavaScript Objects
+JavaScript Objects (Creating objects, Accessing properties, Nested objects, Object methods)
 
-13.JavaScript Array of Objects
+JavaScript Array of Objects
 
-14.Destructuring of Array and Objects
+Object Copying (Reference vs Copy, Shallow copy)
 
-15.ES6 Concepts
+Destructuring of Arrays and Objects
 
-16.Template literals
+Spread Operator (...)
 
-17.Spread operator (...)
+Rest Operator
 
-18.Rest operator
+Default Parameters
 
-19.Destructuring (array & object)
+ES6 Concepts Overview
 
-20.Default parameters
+Template Literals
 
+Short-Circuiting (&&, ||)
+
+ES6 Modules (Conceptual Understanding)
+
+Synchronous vs Asynchronous JavaScript
+
+setTimeout() and setInterval()
+
+Callback Functions and Callback Hell
+
+Promises and Promise Chaining
+
+async / await
+
+Fetch API and Handling JSON Data
+
+HTTP Error Handling (response.ok)
+
+Error Handling using try...catch
+
+Loading State Concept in Frontend Applications
+
+Error State and Success State Concepts
+
+API and State Flow in Frontend Applications
+
+React-Oriented Thinking (Loading–Success–Error Model)
+
+What is DOM (Document Object Model)
+
+How DOM Works (Tree Structure)
+
+Selecting DOM Elements (getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll)
+
+Changing DOM Content and Styles
+
+Creating, Appending, and Removing Elements in DOM
+
+Event Handling in JavaScript
+
+Input Handling and Form Events
+
+Using Loops with DOM Manipulation
+
+DOM vs React (Conceptual Difference)
+
+Reusable Functions and Clean Function Design
+
+Immutability in JavaScript and State Management
+
+Passing Data as Props (Conceptual Foundation)
+
+State Flow Thinking in Frontend Architecture
+
+Basic Frontend Project Folder Structure
+
+Engineering Practices for Scalable Frontend Applications
