@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: rgb(38, 108, 85);
+
+}
+
+h1{
+    color: whitesmoke;
+    margin-left: 600px ;
+}
+input {
+    padding: 8px;
+    margin-left: 550px;
+}
+
+button {
+    padding: 8px;
+    margin-left:5px;
+}
+
+ol {
+    margin-top: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    margin-left: 550px;
+}
