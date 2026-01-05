@@ -1,4 +1,4 @@
-// Array creation
+
 const names = ["Maulik","Ram","Shyam","Govind"];
 
 // //Length of array 

@@ -1,3 +1,4 @@
+// Output the result in console
 console.log("Maulik Thakur");
 //Grading system using conditional statement
 const percentage = 55;
